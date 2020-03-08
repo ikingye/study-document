@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="/study-document/book.min.33dd7934182d4abfe269db67d0d9821bdd866c149d8327944bc47573db5a4d82.css" integrity="sha256-M915NBgtSr/iadtn0NmCG92GbBSdgyeUS8R1c9taTYI=">
 
 
-<script defer src="/study-document/en.search.min.4dbdd0e5c75977ddc3d414766cce64c298c5e79b56c9649793a01f3fb6f91347.js" integrity="sha256-Tb3Q5cdZd93D1BR2bM5kwpjF55tWyWSXk6AfP7b5E0c="></script>
+<script defer src="/study-document/en.search.min.c3c34275c4a5363e3236ffdf53afa55434de60c0db014878e28b350d4c20d4dc.js" integrity="sha256-w8NCdcSlNj4yNv/fU6&#43;lVDTeYMDbAUh44os1DUwg1Nw="></script>
 
 <link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/study-document/docs/note/hugo/theme/index.xml" title="文档学习笔记" />
 <!--
@@ -181,7 +181,13 @@ https://github.com/alex-shpak/hugo-book
 
   <li >
     
-      <span>hugo-book</span>
+      
+
+  <a href="/study-document/docs/note/hugo/theme/book/" >
+      hugo-book
+  </a>
+
+
     
 
     
@@ -527,11 +533,8 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li><a href="#hugo-">Hugo 主题</a>
       <ul>
-        <li><a href="#hugo-book">hugo-book</a>
-          <ul>
-            <li><a href="#heading">配置</a></li>
-          </ul>
-        </li>
+        <li><a href="#hugo-academic">hugo-academic</a></li>
+        <li><a href="#hugo-book">hugo-book</a></li>
       </ul>
     </li>
   </ul>
@@ -546,93 +549,16 @@ https://github.com/alex-shpak/hugo-book
       
       
 <article class="markdown"><h1 id="hugo-">Hugo 主题</h1>
-<p><a href="https://themes.gohugo.io">https://themes.gohugo.io</a></p>
+<h2 id="hugo-academic">hugo-academic</h2>
+<p>适合作为个人主页，内容比较丰富，尤其适合作为技术或科研人员的博客。</p>
 <h2 id="hugo-book">hugo-book</h2>
-<h3 id="heading">配置</h3>
-<h4 id="site-configuration">Site Configuration</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#75715e"># (Optional) Set Google Analytics if you use it to track your website.</span>
-<span style="color:#75715e"># Always put it on the top of the configuration file, otherwise it won&#39;t work</span>
-<span style="color:#a6e22e">googleAnalytics</span> = <span style="color:#e6db74">&#34;UA-XXXXXXXXX-X&#34;</span>
-
-<span style="color:#75715e"># (Optional) If you provide a Disqus shortname, comments will be enabled on</span>
-<span style="color:#75715e"># all pages.</span>
-<span style="color:#a6e22e">disqusShortname</span> = <span style="color:#e6db74">&#34;my-site&#34;</span>
-
-<span style="color:#75715e"># (Optional) Set this to true if you use capital letters in file names</span>
-<span style="color:#a6e22e">disablePathToLower</span> = <span style="color:#66d9ef">true</span>
-
-<span style="color:#75715e"># (Optional) Set this to true to enable &#39;Last Modified by&#39; date and git author</span>
-<span style="color:#75715e">#  information on &#39;doc&#39; type pages.</span>
-<span style="color:#a6e22e">enableGitInfo</span> = <span style="color:#66d9ef">true</span>
-
-<span style="color:#75715e"># (Optional) Theme is intended for documentation use, therefore it doesn&#39;t render taxonomy.</span>
-<span style="color:#75715e"># You can remove related files with config below</span>
-<span style="color:#a6e22e">disableKinds</span> = [<span style="color:#e6db74">&#39;taxonomy&#39;</span>, <span style="color:#e6db74">&#39;taxonomyTerm&#39;</span>]
-  
-[<span style="color:#a6e22e">params</span>]
-  <span style="color:#75715e"># (Optional, default true) Controls table of contents visibility on right side of pages.</span>
-  <span style="color:#75715e"># Start and end levels can be controlled with markup.tableOfContents setting.</span>
-  <span style="color:#75715e"># You can also specify this parameter per page in front matter.</span>
-  <span style="color:#a6e22e">BookToC</span> = <span style="color:#66d9ef">true</span>
-  
-  <span style="color:#75715e"># (Optional, default none) Set the path to a logo for the book. If the logo is</span>
-  <span style="color:#75715e"># /static/logo.png then the path would be &#39;logo.png&#39;</span>
-  <span style="color:#a6e22e">BookLogo</span> = <span style="color:#e6db74">&#39;logo.png&#39;</span>
-  
-  <span style="color:#75715e"># (Optional, default none) Set leaf bundle to render as side menu</span>
-  <span style="color:#75715e"># When not specified file structure and weights will be used</span>
-  <span style="color:#a6e22e">BookMenuBundle</span> = <span style="color:#e6db74">&#39;/menu&#39;</span>
-  
-  <span style="color:#75715e"># (Optional, default docs) Specify section of content to render as menu</span>
-  <span style="color:#75715e"># You can also set value to &#34;*&#34; to render all sections to menu</span>
-  <span style="color:#a6e22e">BookSection</span> = <span style="color:#e6db74">&#39;docs&#39;</span>
-  
-  <span style="color:#75715e"># Set source repository location.</span>
-  <span style="color:#75715e"># Used for &#39;Last Modified&#39; and &#39;Edit this page&#39; links.</span>
-  <span style="color:#a6e22e">BookRepo</span> = <span style="color:#e6db74">&#39;https://github.com/alex-shpak/hugo-book&#39;</span>
-  
-  <span style="color:#75715e"># Enable &#39;Edit this page&#39; links for &#39;doc&#39; page type.</span>
-  <span style="color:#75715e"># Disabled by default. Uncomment to enable. Requires &#39;BookRepo&#39; param.</span>
-  <span style="color:#75715e"># Path must point to &#39;content&#39; directory of repo.</span>
-  <span style="color:#a6e22e">BookEditPath</span> = <span style="color:#e6db74">&#39;edit/master/exampleSite/content&#39;</span>
-  
-  <span style="color:#75715e"># (Optional, default January 2, 2006) Configure the date format used on the pages</span>
-  <span style="color:#75715e"># - In git information</span>
-  <span style="color:#75715e"># - In blog posts</span>
-  <span style="color:#a6e22e">BookDateFormat</span> = <span style="color:#e6db74">&#39;Jan 2, 2006&#39;</span>
-  
-  <span style="color:#75715e"># (Optional, default true) Enables search function with flexsearch,</span>
-  <span style="color:#75715e"># Index is built on fly, therefore it might slowdown your website.</span>
-  <span style="color:#75715e"># Configuration for indexing can be adjusted in i18n folder per language.</span>
-  <span style="color:#a6e22e">BookSearch</span> = <span style="color:#66d9ef">true</span>
-
-  <span style="color:#75715e"># (Optional, default true) Enables comments template on pages</span>
-  <span style="color:#75715e"># By default partals/docs/comments.html includes Disqus template</span>
-  <span style="color:#75715e"># See https://gohugo.io/content-management/comments/#configure-disqus</span>
-  <span style="color:#75715e"># Can be overwritten by same param in page frontmatter</span>
-  <span style="color:#a6e22e">BookComments</span> = <span style="color:#66d9ef">true</span>
-</code></pre></div><h4 id="page-configuration">Page Configuration</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#75715e"># Set type to &#39;docs&#39; if you want to render page outside of configured section or if you render section other than &#39;docs&#39;</span>
-<span style="color:#a6e22e">type</span> = <span style="color:#e6db74">&#39;docs&#39;</span>
-
-<span style="color:#75715e"># Set page weight to re-arrange items in file-tree menu (if BookMenuBundle not set)</span>
-<span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">10</span>
-
-<span style="color:#75715e"># (Optional) Set to mark page as flat section in file-tree menu (if BookMenuBundle not set)</span>
-<span style="color:#a6e22e">bookFlatSection</span> = <span style="color:#66d9ef">true</span>
-
-<span style="color:#75715e"># (Optional, Experimental) Set to hide nested sections or pages at that level. Works only with file-tree menu mode</span>
-<span style="color:#a6e22e">bookCollapseSection</span> = <span style="color:#66d9ef">true</span>
-
-<span style="color:#75715e"># (Optional) Set true to hide page or section from side menu (if BookMenuBundle not set)</span>
-<span style="color:#a6e22e">bookHidden</span> = <span style="color:#66d9ef">true</span>
-
-<span style="color:#75715e"># (Optional) Set &#39;false&#39; to hide ToC from page</span>
-<span style="color:#a6e22e">bookToC</span> = <span style="color:#66d9ef">true</span>
-
-<span style="color:#75715e"># (Optional) If you have enabled BookComments for the site, you can disable it for specific pages.</span>
-<span style="color:#a6e22e">bookComments</span> = <span style="color:#66d9ef">true</span>
-</code></pre></div><p>参考：<a href="https://themes.gohugo.io/hugo-book">https://themes.gohugo.io/hugo-book</a></p>
+<ul>
+<li>适合记笔记，或者写书。我很喜欢他右侧的页面目录，类似<a href="https://yuque.com">语雀</a>。</li>
+<li>其实语雀编辑体验很好，尤其是最近改版后允许用户直接在左侧目录操作新增页面。</li>
+<li>不使用语雀，而使用 github pages，最关键也可以说唯一的原因就是对其他平台不放心，内容还是自己保管比较好。</li>
+<li>不然万一哪天平台下线，只是一个道歉页面，而作为免费用户，只能自己想办法导出笔记，想想还是算了。</li>
+</ul>
+<p>参考：<a href="https://themes.gohugo.io">https://themes.gohugo.io</a></p>
 </article>
  
       
@@ -645,7 +571,7 @@ https://github.com/alex-shpak/hugo-book
 
   <div>
     
-    <a class="flex align-center" href="https://github.com/ikingye/note/commit/3f54753e44deadb5dc244bdba6a244c225a0b279" title='Last modified by yewang | 2020-03-08' target="_blank" rel="noopener">
+    <a class="flex align-center" href="https://github.com/ikingye/note/commit/8078d717d2f135e56bb3d12311af52ab7acfa47f" title='Last modified by yewang | 2020-03-08' target="_blank" rel="noopener">
       <img src="/study-document/svg/calendar.svg" class="book-icon" alt="Calendar" />
       <span>2020-03-08</span>
     </a>
@@ -683,11 +609,8 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li><a href="#hugo-">Hugo 主题</a>
       <ul>
-        <li><a href="#hugo-book">hugo-book</a>
-          <ul>
-            <li><a href="#heading">配置</a></li>
-          </ul>
-        </li>
+        <li><a href="#hugo-academic">hugo-academic</a></li>
+        <li><a href="#hugo-book">hugo-book</a></li>
       </ul>
     </li>
   </ul>
