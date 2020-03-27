@@ -8,16 +8,6 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/study-document/docs/note/hugo/</loc>
-    <lastmod>2020-03-08T12:03:50+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/study-document/docs/note/onenote/</loc>
-    <lastmod>2020-03-08T12:03:50+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/study-document/docs/office/ppt/</loc>
     <lastmod>2020-03-16T14:05:43+08:00</lastmod>
   </url>
@@ -73,8 +63,18 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/study-document/docs/note/codelabs/</loc>
+    <lastmod>2020-03-27T14:57:17+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/study-document/docs/type/epub/</loc>
     <lastmod>2020-03-16T14:05:43+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/study-document/docs/note/hugo/</loc>
+    <lastmod>2020-03-27T14:57:17+08:00</lastmod>
   </url>
   
   <url>
@@ -90,6 +90,11 @@
   <url>
     <loc>https://ikingye.github.io/study-document/docs/type/azw3/</loc>
     <lastmod>2020-03-16T14:05:43+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/study-document/docs/note/onenote/</loc>
+    <lastmod>2020-03-27T14:57:17+08:00</lastmod>
   </url>
   
   <url>
