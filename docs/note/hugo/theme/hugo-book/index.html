@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="hugo-book"><meta property="og:title" content="hugo-book" />
-<meta property="og:description" content="hugo-book 配置 Site Configuration # (Optional) Set Google Analytics if you use it to track your website. # Always put it on the top of the configuration file, otherwise it won&#39;t work googleAnalytics = &#34;UA-XXXXXXXXX-X&#34; # (Optional) If you provide a Disqus shortname, comments will be enabled on # all pages. disqusShortname = &#34;my-site&#34; # (Optional) Set this to true if you use capital letters in file names disablePathToLower = true # (Optional) Set this to true to enable &#39;Last Modified by&#39; date and git author # information on &#39;doc&#39; type pages." />
+<meta property="og:description" content="hugo-book 配置 Site Configuration  点击查看配置详情 ...  # (Optional) Set Google Analytics if you use it to track your website. # Always put it on the top of the configuration file, otherwise it won&#39;t work googleAnalytics = &#34;UA-XXXXXXXXX-X&#34; # (Optional) If you provide a Disqus shortname, comments will be enabled on # all pages. disqusShortname = &#34;my-site&#34; # (Optional) Set this to true if you use capital letters in file names disablePathToLower = true # (Optional) Set this to true to enable &#39;Last Modified by&#39; date and git author # information on &#39;doc&#39; type pages." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/study-document/docs/note/hugo/theme/hugo-book/" />
-<meta property="article:modified_time" content="2020-03-16T14:05:43+08:00" />
+<meta property="article:modified_time" content="2020-03-30T00:49:15+08:00" />
 <title>hugo-book | 文档学习笔记</title>
 <link rel="icon" href="/study-document/favicon.png" type="image/x-icon">
 
@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="/study-document/book.min.33dd7934182d4abfe269db67d0d9821bdd866c149d8327944bc47573db5a4d82.css" integrity="sha256-M915NBgtSr/iadtn0NmCG92GbBSdgyeUS8R1c9taTYI=">
 
 
-<script defer src="/study-document/en.search.min.0a7790e5caa31a0fd4eb5be757a7d04251656863c85f7e64a0d45c9ea106941e.js" integrity="sha256-CneQ5cqjGg/U61vnV6fQQlFlaGPIX35koNRcnqEGlB4="></script>
+<script defer src="/study-document/en.search.min.9d5de1cc5712ac9797d774e3066a724e03ecf16f1f8b214cba0042985bf61111.js" integrity="sha256-nV3hzFcSrJeX13TjBmpyTgPs8W8fiyFMugBCmFv2ERE="></script>
 
 <!--
 Made with Book Theme
@@ -368,6 +368,142 @@ https://github.com/alex-shpak/hugo-book
     
       
 
+  <a href="/study-document/docs/draw/" >
+      作图
+  </a>
+
+
+    
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/study-document/docs/draw/draw.io/" >
+      Draw.io
+  </a>
+
+
+    
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/study-document/docs/draw/mermaid/" >
+      Mermaid
+  </a>
+
+
+    
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/study-document/docs/draw/processon/" >
+      ProcessOn
+  </a>
+
+
+    
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/study-document/docs/draw/visio/" >
+      Visio
+  </a>
+
+
+    
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li >
+    
+      
+
   <a href="/study-document/docs/type/" >
       文档类型
   </a>
@@ -502,6 +638,22 @@ https://github.com/alex-shpak/hugo-book
             <li><a href="#page-configuration">Page Configuration</a></li>
           </ul>
         </li>
+        <li><a href="#heading-1">使用</a>
+          <ul>
+            <li><a href="#shortcodes">Shortcodes</a>
+              <ul>
+                <li><a href="#buttons">Buttons</a></li>
+                <li><a href="#columns">Columns</a></li>
+                <li><a href="#expand">Expand</a></li>
+                <li><a href="#hints">Hints</a></li>
+                <li><a href="#katex">Katex</a></li>
+                <li><a href="#mermaid">Mermaid</a></li>
+                <li><a href="#tabs">Tabs</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#heading-2">参考</a></li>
       </ul>
     </li>
   </ul>
@@ -518,7 +670,15 @@ https://github.com/alex-shpak/hugo-book
 <article class="markdown"><h1 id="hugo-book">hugo-book</h1>
 <h2 id="heading">配置</h2>
 <h3 id="site-configuration">Site Configuration</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#75715e"># (Optional) Set Google Analytics if you use it to track your website.</span>
+<div class="book-expand">
+  <label>
+    <div class="book-expand-head flex justify-between">
+      <span>点击查看配置详情</span>
+      <span>...</span>
+    </div>
+    <input type="checkbox" class="hidden" />
+    <div class="book-expand-content markdown-inner">
+      <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#75715e"># (Optional) Set Google Analytics if you use it to track your website.</span>
 <span style="color:#75715e"># Always put it on the top of the configuration file, otherwise it won&#39;t work</span>
 <span style="color:#a6e22e">googleAnalytics</span> = <span style="color:#e6db74">&#34;UA-XXXXXXXXX-X&#34;</span>
 
@@ -536,39 +696,39 @@ https://github.com/alex-shpak/hugo-book
 <span style="color:#75715e"># (Optional) Theme is intended for documentation use, therefore it doesn&#39;t render taxonomy.</span>
 <span style="color:#75715e"># You can remove related files with config below</span>
 <span style="color:#a6e22e">disableKinds</span> = [<span style="color:#e6db74">&#39;taxonomy&#39;</span>, <span style="color:#e6db74">&#39;taxonomyTerm&#39;</span>]
-  
+
 [<span style="color:#a6e22e">params</span>]
   <span style="color:#75715e"># (Optional, default true) Controls table of contents visibility on right side of pages.</span>
   <span style="color:#75715e"># Start and end levels can be controlled with markup.tableOfContents setting.</span>
   <span style="color:#75715e"># You can also specify this parameter per page in front matter.</span>
   <span style="color:#a6e22e">BookToC</span> = <span style="color:#66d9ef">true</span>
-  
+
   <span style="color:#75715e"># (Optional, default none) Set the path to a logo for the book. If the logo is</span>
   <span style="color:#75715e"># /static/logo.png then the path would be &#39;logo.png&#39;</span>
   <span style="color:#a6e22e">BookLogo</span> = <span style="color:#e6db74">&#39;logo.png&#39;</span>
-  
+
   <span style="color:#75715e"># (Optional, default none) Set leaf bundle to render as side menu</span>
   <span style="color:#75715e"># When not specified file structure and weights will be used</span>
   <span style="color:#a6e22e">BookMenuBundle</span> = <span style="color:#e6db74">&#39;/menu&#39;</span>
-  
+
   <span style="color:#75715e"># (Optional, default docs) Specify section of content to render as menu</span>
   <span style="color:#75715e"># You can also set value to &#34;*&#34; to render all sections to menu</span>
   <span style="color:#a6e22e">BookSection</span> = <span style="color:#e6db74">&#39;docs&#39;</span>
-  
+
   <span style="color:#75715e"># Set source repository location.</span>
   <span style="color:#75715e"># Used for &#39;Last Modified&#39; and &#39;Edit this page&#39; links.</span>
   <span style="color:#a6e22e">BookRepo</span> = <span style="color:#e6db74">&#39;https://github.com/alex-shpak/hugo-book&#39;</span>
-  
+
   <span style="color:#75715e"># Enable &#39;Edit this page&#39; links for &#39;doc&#39; page type.</span>
   <span style="color:#75715e"># Disabled by default. Uncomment to enable. Requires &#39;BookRepo&#39; param.</span>
   <span style="color:#75715e"># Path must point to &#39;content&#39; directory of repo.</span>
   <span style="color:#a6e22e">BookEditPath</span> = <span style="color:#e6db74">&#39;edit/master/exampleSite/content&#39;</span>
-  
+
   <span style="color:#75715e"># (Optional, default January 2, 2006) Configure the date format used on the pages</span>
   <span style="color:#75715e"># - In git information</span>
   <span style="color:#75715e"># - In blog posts</span>
   <span style="color:#a6e22e">BookDateFormat</span> = <span style="color:#e6db74">&#39;Jan 2, 2006&#39;</span>
-  
+
   <span style="color:#75715e"># (Optional, default true) Enables search function with flexsearch,</span>
   <span style="color:#75715e"># Index is built on fly, therefore it might slowdown your website.</span>
   <span style="color:#75715e"># Configuration for indexing can be adjusted in i18n folder per language.</span>
@@ -579,8 +739,21 @@ https://github.com/alex-shpak/hugo-book
   <span style="color:#75715e"># See https://gohugo.io/content-management/comments/#configure-disqus</span>
   <span style="color:#75715e"># Can be overwritten by same param in page frontmatter</span>
   <span style="color:#a6e22e">BookComments</span> = <span style="color:#66d9ef">true</span>
-</code></pre></div><h3 id="page-configuration">Page Configuration</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#75715e"># Set type to &#39;docs&#39; if you want to render page outside of configured section or if you render section other than &#39;docs&#39;</span>
+</code></pre></div>
+    </div>
+  </label>
+</div>
+
+<h3 id="page-configuration">Page Configuration</h3>
+<div class="book-expand">
+  <label>
+    <div class="book-expand-head flex justify-between">
+      <span>点击查看配置详情</span>
+      <span>...</span>
+    </div>
+    <input type="checkbox" class="hidden" />
+    <div class="book-expand-content markdown-inner">
+      <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#75715e"># Set type to &#39;docs&#39; if you want to render page outside of configured section or if you render section other than &#39;docs&#39;</span>
 <span style="color:#a6e22e">type</span> = <span style="color:#e6db74">&#39;docs&#39;</span>
 
 <span style="color:#75715e"># Set page weight to re-arrange items in file-tree menu (if BookMenuBundle not set)</span>
@@ -600,7 +773,299 @@ https://github.com/alex-shpak/hugo-book
 
 <span style="color:#75715e"># (Optional) If you have enabled BookComments for the site, you can disable it for specific pages.</span>
 <span style="color:#a6e22e">bookComments</span> = <span style="color:#66d9ef">true</span>
-</code></pre></div><p>参考：<a href="https://themes.gohugo.io/hugo-book">https://themes.gohugo.io/hugo-book</a></p>
+</code></pre></div>
+    </div>
+  </label>
+</div>
+
+<hr>
+<h2 id="heading-1">使用</h2>
+<h3 id="shortcodes">Shortcodes</h3>
+<h4 id="buttons">Buttons</h4>
+<p>
+
+
+
+  
+
+<a  href="/study-document/"   class="book-btn">
+  Get Home
+</a>
+
+
+
+
+  
+  
+
+
+<a  href="https://github.com/alex-shpak/hugo-book"   target="_blank"  class="book-btn">
+  Contribute
+</a>
+</p>
+<div class="book-expand">
+  <label>
+    <div class="book-expand-head flex justify-between">
+      <span>点击查看配置</span>
+      <span>...</span>
+    </div>
+    <input type="checkbox" class="hidden" />
+    <div class="book-expand-content markdown-inner">
+      <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"><span style="color:#75715e">{</span><span style="color:#75715e">{</span><span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">button</span> <span style="color:#a6e22e">relref</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/&#34;</span> <span style="color:#f92672">&gt;</span><span style="color:#75715e">}</span><span style="color:#75715e">}</span>Get Home<span style="color:#75715e">{</span><span style="color:#75715e">{</span><span style="color:#f92672">&lt;</span> <span style="color:#f92672">/</span><span style="color:#a6e22e">button</span> <span style="color:#f92672">&gt;</span><span style="color:#75715e">}</span><span style="color:#75715e">}</span>
+<span style="color:#75715e">{</span><span style="color:#75715e">{</span><span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">button</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://github.com/alex-shpak/hugo-book&#34;</span> <span style="color:#f92672">&gt;</span><span style="color:#75715e">}</span><span style="color:#75715e">}</span>Contribute<span style="color:#75715e">{</span><span style="color:#75715e">{</span><span style="color:#f92672">&lt;</span> <span style="color:#f92672">/</span><span style="color:#a6e22e">button</span> <span style="color:#f92672">&gt;</span><span style="color:#75715e">}</span><span style="color:#75715e">}</span>
+</code></pre></div>
+    </div>
+  </label>
+</div>
+
+<h4 id="columns">Columns</h4>
+<div class="book-columns flex flex-wrap">
+  
+  <div class="flex-even markdown-inner">
+    <h2 id="left-content">Left Content</h2>
+<p>hello hugo book shortcodes
+  </div>
+  
+  <div class="flex-even markdown-inner">
+    <h2 id="mid-content">Mid Content</h2>
+<p>hello hugo book
+  </div>
+  
+  <div class="flex-even markdown-inner">
+    <h2 id="right-content">Right Content</h2>
+<p>hello hugo book shortcodes
+  </div>
+  
+</div>
+
+<div class="book-expand">
+  <label>
+    <div class="book-expand-head flex justify-between">
+      <span>点击查看配置</span>
+      <span>...</span>
+    </div>
+    <input type="checkbox" class="hidden" />
+    <div class="book-expand-content markdown-inner">
+      <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{&lt; <span style="color:#f92672">columns</span> &gt;}} <span style="color:#75715e">&lt;!--</span><span style="color:#75715e"> begin columns block </span><span style="color:#75715e">--&gt;</span>
+# Left Content
+Lorem markdownum insigne...
+
+&lt;<span style="color:#f92672">---</span>&gt; <span style="color:#75715e">&lt;!--</span><span style="color:#75715e"> magic sparator, between columns </span><span style="color:#75715e">--&gt;</span>
+
+# Mid Content
+Lorem markdownum insigne...
+
+&lt;<span style="color:#f92672">---</span>&gt; <span style="color:#75715e">&lt;!--</span><span style="color:#75715e"> magic sparator, between columns </span><span style="color:#75715e">--&gt;</span>
+
+# Right Content
+Lorem markdownum insigne...
+{{&lt; /<span style="color:#f92672">columns</span> &gt;}}
+</code></pre></div>
+    </div>
+  </label>
+</div>
+
+<h4 id="expand">Expand</h4>
+<div class="book-expand">
+  <label>
+    <div class="book-expand-head flex justify-between">
+      <span>Custom Label</span>
+      <span>...</span>
+    </div>
+    <input type="checkbox" class="hidden" />
+    <div class="book-expand-content markdown-inner">
+      <h2 id="markdown-content">Markdown content</h2>
+<p>hello hugo book shortcodes
+    </div>
+  </label>
+</div>
+
+<div class="book-expand">
+  <label>
+    <div class="book-expand-head flex justify-between">
+      <span>点击查看配置</span>
+      <span>...</span>
+    </div>
+    <input type="checkbox" class="hidden" />
+    <div class="book-expand-content markdown-inner">
+      <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"><span style="color:#75715e">{</span><span style="color:#75715e">{</span><span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">expand</span> <span style="color:#e6db74">&#34;Custom Label&#34;</span> <span style="color:#e6db74">&#34;...&#34;</span> <span style="color:#f92672">&gt;</span><span style="color:#75715e">}</span><span style="color:#75715e">}</span>
+## Markdown content
+Lorem markdownum insigne...
+<span style="color:#75715e">{</span><span style="color:#75715e">{</span><span style="color:#f92672">&lt;</span> <span style="color:#f92672">/</span><span style="color:#a6e22e">expand</span> <span style="color:#f92672">&gt;</span><span style="color:#75715e">}</span><span style="color:#75715e">}</span>
+</code></pre></div>
+    </div>
+  </label>
+</div>
+
+<h4 id="hints">Hints</h4>
+<blockquote class="book-hint info">
+  <strong>Markdown content</strong><br>
+hello hugo book
+</blockquote>
+
+<blockquote class="book-hint warning">
+  <strong>Markdown content</strong><br>
+hello hugo book
+</blockquote>
+
+<blockquote class="book-hint danger">
+  <strong>Markdown content</strong><br>
+hello hugo book
+</blockquote>
+
+<div class="book-expand">
+  <label>
+    <div class="book-expand-head flex justify-between">
+      <span>点击查看配置</span>
+      <span>...</span>
+    </div>
+    <input type="checkbox" class="hidden" />
+    <div class="book-expand-content markdown-inner">
+      <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"><span style="color:#75715e">{</span><span style="color:#75715e">{</span><span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">hint</span> <span style="color:#f92672">[</span><span style="color:#a6e22e">info</span><span style="color:#f92672">|</span><span style="color:#a6e22e">warning</span><span style="color:#f92672">|</span><span style="color:#a6e22e">danger</span><span style="color:#f92672">]</span> <span style="color:#f92672">&gt;</span><span style="color:#75715e">}</span><span style="color:#75715e">}</span>
+**Markdown content**
+hello hugo book
+<span style="color:#75715e">{</span><span style="color:#75715e">{</span><span style="color:#f92672">&lt;</span> <span style="color:#f92672">/</span><span style="color:#a6e22e">hint</span> <span style="color:#f92672">&gt;</span><span style="color:#75715e">}</span><span style="color:#75715e">}</span>
+</code></pre></div>
+    </div>
+  </label>
+</div>
+
+<h4 id="katex">Katex</h4>
+<p>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+
+
+
+<span class="katex">
+  \(
+x = \begin{cases}
+a &\text{if } b \\
+c &\text{if } d
+\end{cases}
+\)
+</span>
+
+<div class="book-expand">
+  <label>
+    <div class="book-expand-head flex justify-between">
+      <span>点击查看配置</span>
+      <span>...</span>
+    </div>
+    <input type="checkbox" class="hidden" />
+    <div class="book-expand-content markdown-inner">
+      <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex">{{&lt; katex [display] &gt;}}
+x = <span style="color:#66d9ef">\begin</span>{cases}
+   a &amp;<span style="color:#66d9ef">\text</span>{if } b <span style="color:#66d9ef">\\</span>
+   c &amp;<span style="color:#66d9ef">\text</span>{if } d
+<span style="color:#66d9ef">\end</span>{cases}
+{{&lt; /katex &gt;}}
+</code></pre></div>
+    </div>
+  </label>
+</div>
+</p>
+<h4 id="mermaid">Mermaid</h4>
+<p>
+
+<script src="/study-document/mermaid.min.js"></script>
+
+
+
+<p class="mermaid">
+sequenceDiagram
+Alice->>Bob: Hello Bob, how are you?
+alt is sick
+Bob->>Alice: Not so good :(
+else is well
+Bob->>Alice: Feeling fresh like a daisy
+end
+opt Extra response
+Bob->>Alice: Thanks for asking
+end
+</p>
+
+<div class="book-expand">
+  <label>
+    <div class="book-expand-head flex justify-between">
+      <span>点击查看配置</span>
+      <span>...</span>
+    </div>
+    <input type="checkbox" class="hidden" />
+    <div class="book-expand-content markdown-inner">
+      <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"><span style="color:#75715e">{</span><span style="color:#75715e">{</span><span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">mermaid</span> <span style="color:#f92672">&gt;</span><span style="color:#75715e">}</span><span style="color:#75715e">}</span>
+sequenceDiagram
+    Alice-&gt;&gt;Bob: Hello Bob, how are you?
+    alt is sick
+        Bob-&gt;&gt;Alice: Not so good :(
+    else is well
+        Bob-&gt;&gt;Alice: Feeling fresh like a daisy
+    end
+    opt Extra response
+        Bob-&gt;&gt;Alice: Thanks for asking
+    end
+<span style="color:#75715e">{</span><span style="color:#75715e">{</span><span style="color:#f92672">&lt;</span> <span style="color:#f92672">/</span><span style="color:#a6e22e">mermaid</span> <span style="color:#f92672">&gt;</span><span style="color:#75715e">}</span><span style="color:#75715e">}</span>
+</code></pre></div>
+    </div>
+  </label>
+</div>
+</p>
+<h4 id="tabs">Tabs</h4>
+<p>
+
+
+
+<div class="book-tabs"><input type="radio" class="hidden" name="tabs-uniqueid" id="tabs-uniqueid-0" checked="checked" />
+  <label for="tabs-uniqueid-0">
+    MacOS
+  </label>
+  <div class="book-tabs-content markdown-inner">
+    <h1 id="macos">MacOS</h1>
+<p>This is tab <strong>MacOS</strong> content.
+  </div><input type="radio" class="hidden" name="tabs-uniqueid" id="tabs-uniqueid-1"  />
+  <label for="tabs-uniqueid-1">
+    Linux
+  </label>
+  <div class="book-tabs-content markdown-inner">
+    <h1 id="linux">Linux</h1>
+<p>This is tab <strong>Linux</strong> content.
+  </div><input type="radio" class="hidden" name="tabs-uniqueid" id="tabs-uniqueid-2"  />
+  <label for="tabs-uniqueid-2">
+    Windows
+  </label>
+  <div class="book-tabs-content markdown-inner">
+    <h1 id="windows">Windows</h1>
+<p>This is tab <strong>Windows</strong> content.
+  </div></div>
+
+<div class="book-expand">
+  <label>
+    <div class="book-expand-head flex justify-between">
+      <span>点击查看配置</span>
+      <span>...</span>
+    </div>
+    <input type="checkbox" class="hidden" />
+    <div class="book-expand-content markdown-inner">
+      <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"><span style="color:#75715e">{</span><span style="color:#75715e">{</span><span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">tabs</span> <span style="color:#e6db74">&#34;uniqueid&#34;</span> <span style="color:#f92672">&gt;</span><span style="color:#75715e">}</span><span style="color:#75715e">}</span>
+<span style="color:#75715e">{</span><span style="color:#75715e">{</span><span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">tab</span> <span style="color:#e6db74">&#34;MacOS&#34;</span> <span style="color:#f92672">&gt;</span><span style="color:#75715e">}</span><span style="color:#75715e">}</span> # MacOS Content <span style="color:#75715e">{</span><span style="color:#75715e">{</span><span style="color:#f92672">&lt;</span> <span style="color:#f92672">/</span><span style="color:#a6e22e">tab</span> <span style="color:#f92672">&gt;</span><span style="color:#75715e">}</span><span style="color:#75715e">}</span>
+<span style="color:#75715e">{</span><span style="color:#75715e">{</span><span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">tab</span> <span style="color:#e6db74">&#34;Linux&#34;</span> <span style="color:#f92672">&gt;</span><span style="color:#75715e">}</span><span style="color:#75715e">}</span> # Linux Content <span style="color:#75715e">{</span><span style="color:#75715e">{</span><span style="color:#f92672">&lt;</span> <span style="color:#f92672">/</span><span style="color:#a6e22e">tab</span> <span style="color:#f92672">&gt;</span><span style="color:#75715e">}</span><span style="color:#75715e">}</span>
+<span style="color:#75715e">{</span><span style="color:#75715e">{</span><span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">tab</span> <span style="color:#e6db74">&#34;Windows&#34;</span> <span style="color:#f92672">&gt;</span><span style="color:#75715e">}</span><span style="color:#75715e">}</span> # Windows Content <span style="color:#75715e">{</span><span style="color:#75715e">{</span><span style="color:#f92672">&lt;</span> <span style="color:#f92672">/</span><span style="color:#a6e22e">tab</span> <span style="color:#f92672">&gt;</span><span style="color:#75715e">}</span><span style="color:#75715e">}</span>
+<span style="color:#75715e">{</span><span style="color:#75715e">{</span><span style="color:#f92672">&lt;</span> <span style="color:#f92672">/</span><span style="color:#a6e22e">tabs</span> <span style="color:#f92672">&gt;</span><span style="color:#75715e">}</span><span style="color:#75715e">}</span>
+</code></pre></div>
+    </div>
+  </label>
+</div>
+</p>
+<hr>
+<h2 id="heading-2">参考</h2>
+<ul>
+<li><a href="https://github.com/alex-shpak/hugo-book">https://github.com/alex-shpak/hugo-book</a></li>
+<li><a href="https://themes.gohugo.io/hugo-book">https://themes.gohugo.io/hugo-book</a></li>
+<li><a href="https://katex.org/">Katex</a></li>
+</ul>
 </article>
  
       
@@ -613,9 +1078,9 @@ https://github.com/alex-shpak/hugo-book
 
   <div>
     
-    <a class="flex align-center" href="https://github.com/ikingye/note/commit/fe3904deb07e1443777fa28f9fa37229b8b4872e" title='Last modified by yewang | 2020-03-16' target="_blank" rel="noopener">
+    <a class="flex align-center" href="https://github.com/ikingye/note/commit/a45e347e5ecc3b31266ae6d84aecb7bc1198855f" title='Last modified by yewang | 2020-03-30' target="_blank" rel="noopener">
       <img src="/study-document/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>2020-03-16</span>
+      <span>2020-03-30</span>
     </a>
   </div>
 
@@ -657,6 +1122,22 @@ https://github.com/alex-shpak/hugo-book
             <li><a href="#page-configuration">Page Configuration</a></li>
           </ul>
         </li>
+        <li><a href="#heading-1">使用</a>
+          <ul>
+            <li><a href="#shortcodes">Shortcodes</a>
+              <ul>
+                <li><a href="#buttons">Buttons</a></li>
+                <li><a href="#columns">Columns</a></li>
+                <li><a href="#expand">Expand</a></li>
+                <li><a href="#hints">Hints</a></li>
+                <li><a href="#katex">Katex</a></li>
+                <li><a href="#mermaid">Mermaid</a></li>
+                <li><a href="#tabs">Tabs</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#heading-2">参考</a></li>
       </ul>
     </li>
   </ul>
