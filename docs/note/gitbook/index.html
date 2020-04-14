@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="OneNote"><meta property="og:title" content="OneNote" />
+<meta name="description" content="Gitbook"><meta property="og:title" content="Gitbook" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://ikingye.github.io/study-document/docs/note/onenote/" />
+<meta property="og:url" content="https://ikingye.github.io/study-document/docs/note/gitbook/" />
 
-<title>OneNote | 文档学习笔记</title>
+<title>Gitbook | 文档学习笔记</title>
 <link rel="icon" href="/study-document/favicon.png" type="image/x-icon">
 
 
@@ -18,7 +18,7 @@
 
 <script defer src="/study-document/en.search.min.2a1bee5ca594601641b816a6356922a95ee69b72d6993cdf489370fb96ccf2b6.js" integrity="sha256-KhvuXKWUYBZBuBamNWkiqV7mm3LWmTzfSJNw&#43;5bM8rY="></script>
 
-<link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/study-document/docs/note/onenote/index.xml" title="文档学习笔记" />
+<link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/study-document/docs/note/gitbook/index.xml" title="文档学习笔记" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -149,7 +149,7 @@ https://github.com/alex-shpak/hugo-book
     
       
 
-  <a href="/study-document/docs/note/onenote/"  class="active">
+  <a href="/study-document/docs/note/onenote/" >
       OneNote
   </a>
 
@@ -160,12 +160,6 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-
-  
-  <ul>
-    
-  </ul>
-  
 
 
 
@@ -181,7 +175,7 @@ https://github.com/alex-shpak/hugo-book
     
       
 
-  <a href="/study-document/docs/note/gitbook/" >
+  <a href="/study-document/docs/note/gitbook/"  class="active">
       Gitbook
   </a>
 
@@ -192,6 +186,12 @@ https://github.com/alex-shpak/hugo-book
 
 
 
+
+  
+  <ul>
+    
+  </ul>
+  
 
 
 
@@ -596,7 +596,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/study-document/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>OneNote</strong>
+  <strong>Gitbook</strong>
 
   <label for="toc-control">
     <img src="/study-document/svg/toc.svg" class="book-icon" alt="Table of Contents" />
@@ -610,7 +610,15 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#onenote">OneNote</a></li>
+    <li><a href="#gitbook">Gitbook</a>
+      <ul>
+        <li><a href="#gitbook-serve">gitbook serve</a>
+          <ul>
+            <li><a href="#serve-多个笔记本">serve 多个笔记本</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -621,8 +629,18 @@ https://github.com/alex-shpak/hugo-book
       </header>
 
       
-<article class="markdown"><h1 id="onenote">OneNote</h1>
-</article>
+<article class="markdown"><h1 id="gitbook">Gitbook</h1>
+<h2 id="gitbook-serve">gitbook serve</h2>
+<h3 id="serve-多个笔记本">serve 多个笔记本</h3>
+<p>&ndash;port Port for server to listen on (Default is 4000)</p>
+<p>&ndash;lrport Port for livereload server to listen on (Default is 35729)</p>
+<p>So you can change both two ports and serve as many books as you want.</p>
+<p>eg:</p>
+<p>one:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">gitbook --lrport <span style="color:#ae81ff">35730</span> --port <span style="color:#ae81ff">4001</span> serve
+</code></pre></div><p>another:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">gitbook --lrport <span style="color:#ae81ff">35731</span> --port <span style="color:#ae81ff">4002</span> serve
+</code></pre></div></article>
  
 
       <footer class="book-footer">
@@ -633,9 +651,9 @@ https://github.com/alex-shpak/hugo-book
 
   <div>
     
-    <a class="flex align-center" href="https://github.com/ikingye/note/commit/070c204ea02a7d073737db84b6ba3ecef443f231" title='Last modified by yewang | 2020-03-29' target="_blank" rel="noopener">
+    <a class="flex align-center" href="https://github.com/ikingye/note/commit/6072ca336e1507af861983f035047f9f0348e155" title='Last modified by yewang | 2020-04-14' target="_blank" rel="noopener">
       <img src="/study-document/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>2020-03-29</span>
+      <span>2020-04-14</span>
     </a>
   </div>
 
@@ -667,7 +685,15 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#onenote">OneNote</a></li>
+    <li><a href="#gitbook">Gitbook</a>
+      <ul>
+        <li><a href="#gitbook-serve">gitbook serve</a>
+          <ul>
+            <li><a href="#serve-多个笔记本">serve 多个笔记本</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
